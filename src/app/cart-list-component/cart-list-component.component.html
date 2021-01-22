@@ -1,0 +1,18 @@
+<h1>Cart</h1>
+<div *ngIf="cartProducts.length > 0; else elseBlock">
+    <div *ngFor="let product of cartProducts; trackBy: trackByItemCount">
+        <span>
+            name: {{product.name}}
+        </span>
+        <span>
+            description: {{product.description}}
+        </span>
+        <span>
+            description: {{product.price}}
+        </span>
+        <span>
+            Number Of Products In Cart: ({{product.numberOfItems}})
+        </span>
+    </div>
+</div>
+<ng-template #elseBlock>No products in cart.</ng-template>

@@ -1,0 +1,6 @@
+<h1>Cups for dev`s!</h1>
+<p>Name: {{fcData.name}}</p>
+<p>Description: {{fcData.description}}</p>
+<p>Price: {{fcData.price}}</p>
+<p>Types of cups:</p>
+<p *ngFor="let cupType of fcData.categories | keyvalue">{{cupType.value}}</p>
