@@ -7,12 +7,13 @@ import { FirstComponentComponent } from './first-component/first-component.compo
 import { ProductComponentComponent } from './product-component/product-component.component';
 import { ProductListComponentComponent } from './product-list-component/product-list-component.component';
 import { CartListComponentComponent } from './cart-list-component/cart-list-component.component';
-import { ProductServiceService } from './services/product-service.service';
-import { CartServiceService } from './services/cart-service.service';
+// import { ProductServiceService } from './services/product-service.service';
+// import { CartServiceService } from './services/cart-service.service';
 
 @NgModule({
   declarations: [
     AppComponent,
+    // Два суффикса "Component" - это много, надо поправить названия классов компонентов
     FirstComponentComponent,
     ProductComponentComponent,
     ProductListComponentComponent,
@@ -22,7 +23,8 @@ import { CartServiceService } from './services/cart-service.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [ ProductServiceService, CartServiceService ],
+  // Это делать не надо
+  // providers: [ ProductServiceService, CartServiceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
